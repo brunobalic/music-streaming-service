@@ -3,6 +3,8 @@
 ## *About*
 This is my music streaming web application that I work on to sharpen my programming skills and learn new technologies along the way.
 
+:arrow_right: **[See how it looks](#screenshots)** :arrow_left:
+
 ## Technologies used
 
 - *Frontend*
@@ -33,3 +35,28 @@ The application has two types of users:
 
 - **Professional artists**
   - Can upload their own music and put them in different collections (albums, singles, etc.) and monitor their performance.
+
+### Screenshots
+
+*Some screenshots from regular user account*
+
+<p align="middle">
+	<img src="/showcase/screenshots/landing_page.jpg" width="49%" /> 
+</p>
+<p align="middle">
+	<img src="/showcase/screenshots/regular-user/artist_page1.jpg" width="49%" /> 
+	<img src="/showcase/screenshots/regular-user/album_page1.jpg" width="49%" />
+</p>
+<p align="middle">
+	<img src="/showcase/screenshots/regular-user/artist_page2.jpg" width="49%" /> 
+	<img src="/showcase/screenshots/regular-user/album_page2.jpg" width="49%" />
+</p>
+<p align="middle">
+	<img src="/showcase/screenshots/regular-user/search_page1.jpg" width="49%" />
+	<img src="/showcase/screenshots/regular-user/discover_page1.jpg" width="49%" /> 
+</p>
+<p align="middle">
+	<img src="/showcase/screenshots/regular-user/user_home1.jpg" width="33%" />
+	<img src="/showcase/screenshots/regular-user/user_favs1.jpg" width="33%" /> 
+	<img src="/showcase/screenshots/regular-user/user_favs2.jpg" width="33%" /> 
+</p>
