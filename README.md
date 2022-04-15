@@ -26,6 +26,9 @@ Before Vue app can request any data from the gateway, user needs to authenticate
 Now when Vue app makes requests to the gateway, with the included token, gateway validates the token and proceeds with request.
 Gateway then forwards requests to other microservices.
 
+<p align="middle">
+	<img src="/showcase/architecture-diagram.png" width="50%" /> 
+</p>
 
 ## Description
 
