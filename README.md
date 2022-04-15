@@ -59,7 +59,7 @@ The application has two types of users:
 	<img src="/showcase/screenshots/regular-user/discover_page1.jpg" width="49%" /> 
 </p>
 <p align="middle">
-	<img src="/showcase/screenshots/regular-user/user_home1.jpg" width="33%" />
-	<img src="/showcase/screenshots/regular-user/user_favs1.jpg" width="33%" /> 
-	<img src="/showcase/screenshots/regular-user/user_favs2.jpg" width="33%" /> 
+	<img src="/showcase/screenshots/regular-user/user_home1.jpg" width="32%" />
+	<img src="/showcase/screenshots/regular-user/user_favs1.jpg" width="32%" /> 
+	<img src="/showcase/screenshots/regular-user/user_favs2.jpg" width="32%" /> 
 </p>
