@@ -11,8 +11,10 @@ This is my music streaming web application that I work on to sharpen my programm
 	- **[Vue.js](https://github.com/vuejs/vue "Vue.js")**
 	  - Vuex
 	  - Vue-router
+  	- Sass
 - *Backend*
-	- **Java** & **[Spring Boot](https://github.com/spring-projects/spring-boot)**
+	- **Java**
+	- **[Spring Boot](https://github.com/spring-projects/spring-boot)**
 - *Authentication*
 	- Auth0 IAM
 
@@ -27,7 +29,7 @@ Now when Vue app makes requests to the gateway, with the included token, gateway
 Gateway then forwards requests to other microservices.
 
 <p align="middle">
-	<img src="/showcase/architecture-diagram.png" width="50%" /> 
+	<img src="/showcase/architecture-diagram.png" width="75%" /> 
 </p>
 
 ## Description
