@@ -1,0 +1,57 @@
+### Create new track
+POST http://{{host}}:{{port}}/api/{{api-ver}}/tracks
+#Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="data"
+Content-Type: application/json
+
+{
+  "title": "new1",
+  "album_id": 1,
+  "description": "desc",
+  "public_track": true
+}
+--WebAppBoundary
+Content-Disposition: form-data; name="json"
+Content-Type: application/json
+
+{
+  "title": "new1",
+  "album_id": 1,
+  "description": "desc",
+  "public_track": true
+}
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="sample_karma.mp3"
+
+< ../resources/sample_karma.mp3
+--WebAppBoundary
+Content-Disposition: form-data; name="file-extension"
+Content-Type: text/plain
+
+mp3
+--WebAppBoundary
+Content-Disposition: form-data; name="artistId"
+Content-Type: text/plain
+
+123
+--WebAppBoundary
+Content-Disposition: form-data; name="uploaderJwt"
+Content-Type: text/plain
+
+there will be JWT
+--WebAppBoundary--
+
+### Get Track by ID
+GET http://{{host}}:{{port}}/api/{{api-ver}}/tracks/12
+#Authorization: {{auth-type}} {{jwt-token}}
+
+### Delete Track by ID
+GET http://{{host}}:{{port}}/api/{{api-ver}}/tracks/1234
+#Authorization: {{auth-type}} {{jwt-token}}
+
+### Search Tracks
+GET http://{{host}}:{{port}}/api/{{api-ver}}/tracks/search?q=al
+#Authorization: {{auth-type}} {{jwt-token}}

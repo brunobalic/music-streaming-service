@@ -1,0 +1,23 @@
+### Add Album Rating
+POST http://{{host}}:{{port}}/api/{{api-ver}}/ratings/albums
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="user-id"
+Content-Type: text/plain
+
+123
+--WebAppBoundary
+Content-Disposition: form-data; name="album-id"
+Content-Type: text/plain
+
+456
+--WebAppBoundary
+Content-Disposition: form-data; name="rating-dto"
+Content-Type: application/json
+
+{
+  "score": 7,
+  "comment": "Nice one"
+}
+--WebAppBoundary--

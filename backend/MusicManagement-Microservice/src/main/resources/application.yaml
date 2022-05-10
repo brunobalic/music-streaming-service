@@ -1,0 +1,28 @@
+server:
+  port: 8103
+  servlet:
+    context-path: /api/v1
+  tomcat:
+    max-http-form-post-size: 50MB
+    max-swallow-size: 50MB
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  datasource:
+    url: jdbc:h2:tcp://localhost:9091/mem:mydb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+    jpa:
+      hibernate:
+        ddl-auto: none
+
+my_values:
+  microservices:
+    streaming-ms:
+      base-url: http://localhost:8104

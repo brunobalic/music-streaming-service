@@ -1,0 +1,33 @@
+POST http://{{host}}:{{port}}/api/{{api-ver}}/upload/audio
+Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="key-audio"; filename="karma.mp3"
+
+< ../resources/karma.mp3
+--WebAppBoundary--
+
+###
+
+POST http://{{host}}:{{port}}/api/{{api-ver}}/upload/artwork
+Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="key-img"; filename="maddiegreer.jpg"
+
+< ../resources/maddiegreer.jpg
+--WebAppBoundary
+Content-Disposition: form-data; name="key-txt"
+Content-Type: text/plain
+
+* there must be one empty line after last header
+some Text from http request
+and
+some more,
+
+with one empty line above this one
+--WebAppBoundary--
+
+###

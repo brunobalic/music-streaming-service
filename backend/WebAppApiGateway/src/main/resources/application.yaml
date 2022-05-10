@@ -1,0 +1,22 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /api/v1
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 50MB
+      max-file-size: 50MB
+
+my_values:
+  microservices:
+    artist-ms:
+      base-url: http://localhost:8101/api/v1
+    user-ms:
+      base-url: http://localhost:8102/api/v1
+    music-ms:
+      base-url: http://localhost:8103/api/v1
+    streaming-ms:
+      base-url: http://localhost:8104/api

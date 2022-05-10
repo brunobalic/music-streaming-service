@@ -1,0 +1,4 @@
+### Get Audio Resource
+GET http://{{host}}:{{port}}/api/{{api-ver}}/media/audio/30
+#Authorization: {{auth-type}} {{jwt-token}}
+app-userId: 1

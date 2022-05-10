@@ -1,0 +1,59 @@
+### Upload audio file
+POST http://{{host}}:{{port}}/api/media/audio/upload
+#Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="sample_karma.mp3"
+
+< ../resources/sample_karma.mp3
+--WebAppBoundary
+Content-Disposition: form-data; name="file-extension"
+Content-Type: text/plain
+
+mp3
+--WebAppBoundary
+Content-Disposition: form-data; name="id"
+Content-Type: text/plain
+
+123
+--WebAppBoundary--
+
+
+
+### Get audio file
+GET http://{{host}}:{{port}}/api/media/audio/30
+#Authorization: {{auth-type}} {{jwt-token}}
+
+
+
+### Upload Image
+POST http://{{host}}:{{port}}/api/media/image/upload
+#Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="key-file"; filename="sample_madonna.jpg"
+
+< ../resources/sample_madonna.jpg
+--WebAppBoundary
+Content-Disposition: form-data; name="key-file-extension"
+
+jpg
+--WebAppBoundary
+Content-Disposition: form-data; name="key-type"
+Content-Type: text/plain
+
+album
+--WebAppBoundary
+Content-Disposition: form-data; name="key-id"
+Content-Type: text/plain
+
+123
+--WebAppBoundary--
+
+
+
+### Get image
+GET http://{{host}}:{{port}}/api/media/image/1
+#Authorization: {{auth-type}} {{jwt-token}}

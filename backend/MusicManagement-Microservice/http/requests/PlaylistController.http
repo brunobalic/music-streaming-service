@@ -1,0 +1,4 @@
+### GET album by ID
+GET http://{{host}}:{{port}}/api/{{api-ver}}/playlists/1
+Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json

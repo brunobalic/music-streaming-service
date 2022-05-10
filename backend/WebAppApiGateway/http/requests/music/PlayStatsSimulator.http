@@ -1,0 +1,7 @@
+### Get Artist Play Stats
+GET http://{{host}}:{{port}}/api/{{api-ver}}/music/stats
+Authorization: {{auth-type}} {{jwt-token}}
+
+### Get Top 50 from Artist
+GET http://{{host}}:{{port}}/api/{{api-ver}}/music/stats/top50/1
+Authorization: {{auth-type}} {{jwt-token}}

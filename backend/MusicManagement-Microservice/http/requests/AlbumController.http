@@ -1,0 +1,46 @@
+### Create new album/collection
+POST http://{{host}}:{{port}}/api/album/create
+#Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="data"
+Content-Type: application/json
+
+{
+  "name": "test1",
+  "description": "desc for test1",
+  "collectionType": "Album",
+  "releaseDate": {{$timestamp}},
+  "publishDate": null,
+  "publishTime": null,
+  "artistId": null
+}
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="sample_madonna.jpg"
+
+< ../resources/sample_madonna.jpg
+--WebAppBoundary
+Content-Disposition: form-data; name="file-extension"
+Content-Type: text/plain
+
+jpg
+--WebAppBoundary
+Content-Disposition: form-data; name="key-artistId"
+Content-Type: text/plain
+
+123
+--WebAppBoundary--
+
+
+### GET album by ID
+GET http://{{host}}:{{port}}/api/album/9
+Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json
+
+
+### Search albums
+GET http://{{host}}:{{port}}/api/album/search?q=al
+#Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json
+

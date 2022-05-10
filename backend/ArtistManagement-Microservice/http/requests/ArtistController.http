@@ -1,0 +1,14 @@
+### Create new Artist
+POST http://{{host}}:{{port}}/api/{{api-ver}}/artists
+
+### Get Artist by ID
+GET http://{{host}}:{{port}}/api/{{api-ver}}/artists/2
+
+### Get Artist by Auth0 ID
+GET http://{{host}}:{{port}}/api/{{api-ver}}/artists/auth0?id=auth0|60a3a3f1ab359f00712732e2
+
+### Serach Artist
+GET http://{{host}}:{{port}}/api/{{api-ver}}/artists/search?q=al
+
+### Serach Artist
+GET http://{{host}}:{{port}}/api/{{api-ver}}/artists/search?q=al&p=1&s=1

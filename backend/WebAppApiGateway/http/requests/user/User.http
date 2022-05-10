@@ -1,0 +1,11 @@
+### Get Current User
+GET http://{{host}}:{{port}}/api/{{api-ver}}/user
+Authorization: {{auth-type}} {{jwt-token}}
+
+### t1
+GET http://{{host}}:{{port}}/api/{{api-ver}}/user/t1
+Authorization: {{auth-type}} {{jwt-token}}
+
+### t1 path var
+GET http://{{host}}:{{port}}/api/{{api-ver}}/user/t1
+Authorization: {{auth-type}} {{jwt-token}}

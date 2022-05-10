@@ -1,0 +1,4 @@
+### Get all genres
+GET http://{{host}}:{{port}}/api/genre
+#Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json

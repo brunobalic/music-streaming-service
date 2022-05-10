@@ -1,0 +1,23 @@
+### Get audio file
+POST http://{{host}}:{{port}}/api/media/audio/30
+#Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="userId"
+Content-Type: text/plain
+
+1
+--WebAppBoundary--
+
+### Increment play count
+POST http://{{host}}:{{port}}/api/media/audio/30/increment
+#Authorization: {{auth-type}} {{jwt-token}}
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="userId"
+Content-Type: text/plain
+
+1
+--WebAppBoundary--

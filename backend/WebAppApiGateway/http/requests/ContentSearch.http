@@ -1,0 +1,32 @@
+### Search all content
+GET http://{{host}}:{{port}}/api/v1/search?q=Alicia
+// ! Vazno - ovaj razmak izmedu je potreban - tako je po pravilu
+Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json
+
+### Search Artists
+GET http://{{host}}:{{port}}/api/v1/search/artist?q=AliciA
+Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json
+
+### Search specific content
+GET http://{{host}}:{{port}}/api/v1/search/artist?q=ALiCia
+Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json
+
+> {%
+// JavaScript response handler
+// ovo je primjer kako odraditi neki js kod nakon request-a
+// dostupni objekti: client i response
+
+client.log(response.body);
+client.log(JSON.stringify(response.body));
+client.log(JSON.stringify(response.body, null, 2));
+client.log(response.body[0].id);
+client.log(response.body[0].first_name + " " + response.body[0].last_name);
+ %}
+
+### Search specific content
+GET http://{{host}}:{{port}}/api/v1/search/track?q=a&p=2&s=10
+Authorization: {{auth-type}} {{jwt-token}}
+Accept: application/json

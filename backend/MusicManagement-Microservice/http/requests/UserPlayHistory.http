@@ -1,0 +1,2 @@
+### Get user play history
+GET http://{{host}}:{{port}}/api/{{api-ver}}/play-history/1
